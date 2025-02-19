@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: Montserrat, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* start-header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)),
+    url(/imgs/imgs/bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-color: aqua;
+  /* position: sticky; */
+}
+
+header .txt-caption p {
+  font-size: 50px;
+  font-family: var(--main-font);
+  font-weight: 800;
+}
+
+header .txt-caption h1 {
+  font-size: 60px;
+  font-family: var(--main-font);
+  font-weight: 200;
+}
+
+header .txt-caption h1::after {
+  content: "";
+  font-weight: 400;
+  font-family: var(--main-font);
+  animation: header-an 5s infinite;
+}
+
+@keyframes header-an {
+  0% {
+    content: "|";
+  }
+  0.5% {
+    content: "M|";
+  }
+  1% {
+    content: "Mo|";
+  }
+  2% {
+    content: "Moh|";
+  }
+  4% {
+    content: "Moha|";
+  }
+  6% {
+    content: "Mohame|";
+  }
+  8% {
+    content: "Mohamed H|";
+  }
+  10% {
+    content: "Mohamed Ho|";
+  }
+  12% {
+    content: "Mohamed Hos|";
+  }
+  14% {
+    content: "Mohamed Hoss|";
+  }
+  15% {
+    content: "Mohamed Hossa|";
+  }
+  18% {
+    content: "Mohamed Hossam|";
+  }
+  20% {
+    content: "Mohamed Hossam|";
+  }
+  22% {
+    content: "Mohamed Hossam|";
+  }
+  24% {
+    content: "Mohamed Hossa|";
+  }
+  26% {
+    content: "Mohamed Hoss|";
+  }
+  28% {
+    content: "Mohamed Hos|";
+  }
+  30% {
+    content: "Mohamed Ho|";
+  }
+  32% {
+    content: "Mohamed H|";
+  }
+  34% {
+    content: "Mohamed |";
+  }
+  36% {
+    content: "Mohame |";
+  }
+  38% {
+    content: "Moham |";
+  }
+  40% {
+    content: "Moha|";
+  }
+  42% {
+    content: "Moh|";
+  }
+  44% {
+    content: "Mo |";
+  }
+  46% {
+    content: " |";
+  }
+  48% {
+    content: " D|";
+  }
+  50% {
+    content: " De|";
+  }
+  52% {
+    content: "Dev|";
+  }
+  54% {
+    content: " Deve|";
+  }
+  56% {
+    content: " Devel|";
+  }
+  58% {
+    content: " Develo|";
+  }
+  60% {
+    content: " Develop|";
+  }
+  62% {
+    content: " Develope|";
+  }
+  64% {
+    content: " Developer|";
+  }
+  66% {
+    content: " Developer|";
+  }
+  68% {
+    content: " Develope|";
+  }
+  70% {
+    content: " Develop|";
+  }
+  72% {
+    content: " Develo|";
+  }
+  74% {
+    content: " Devel|";
+  }
+  76% {
+    content: " Deve|";
+  }
+  78% {
+    content: " Dev|";
+  }
+  80% {
+    content: " De|";
+  }
+  82% {
+    content: " D|";
+  }
+  84% {
+    content: " |";
+  }
+  86% {
+    content: "D |";
+  }
+  88% {
+    content: "De |";
+  }
+  90% {
+    content: "Des |";
+  }
+  92% {
+    content: "Desi |";
+  }
+  94% {
+    content: "Desig |";
+  }
+  96% {
+    content: "Design |";
+  }
+  98% {
+    content: "Designe |";
+  }
+  100% {
+    content: "Designer |";
+  }
+}
+
+header .icons .layer {
+  /* margin-right: 10px; */
+  background-color: rgba(0, 0, 0, 0.259);
+  width: 35px;
+  height: 35px;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .icons .layer a {
+  font-size: 14px;
+}
+/* end-header */
+.navbar-brand {
+  font-family: var(--main-font);
+  font-weight: 800;
+}
+
+.navbar-nav .nav-link {
+  font-family: Poppins, sans-serif;
+}
+
+.navbar-nav .nav-link.active {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  width: 44px;
+  height: 2px;
+  position: absolute;
+  background-color: white;
+  top: 29px;
+  bottom: 0px;
+  left: 10px;
+}
+
+/* End-navbar  */
+#about .right-container h2 {
+  font-family: var(--main-font);
+  font-weight: 800;
+  color: rgb(52, 52, 52);
+}
+
+#about .right-container span {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.progress-bar {
+  --bs-progress-bar-bg: rgb(0, 0, 0);
+  border-radius: 1px;
+}
+
+#about button.cv {
+  background-color: #1c1c1c;
+  color: white;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* End-about  */
+#services {
+  background-color: #f7f7f7;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.06);
+  transition: background-color 0.5s;
+}
+
+.icon i {
+  transition: color 1s;
+}
+
+.col-lg-4:hover .icon {
+  background-color: black;
+}
+
+.col-lg-4:hover i {
+  color: white;
+}
+
+.col-lg-4 h5 {
+  font-family: var(--bs-progress-bar-bg);
+}
+/* End-services  */
+#portfolio .caption li {
+  width: 30px;
+  height: 30px;
+  &:hover {
+    background-color: white !important;
+    border: 1px black solid !important;
+  }
+}
+
+#portfolio .col-lg-4 .caption {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#portfolio .col-lg-4 .caption h5 {
+  font-size: 12px;
+  font-family: var(--bs-progress-bar-bg);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#portfolio li {
+  color: black !important;
+}
+
+#portfolio li:hover i {
+  color: black !important;
+}
+
+#portfolio .col-lg-4:hover .caption {
+  opacity: 1;
+  border: 5px #dbdadb solid;
+}
+
+.nav-pills .nav-link.active {
+  /* border-bottom: 2px black solid; */
+  --bs-nav-pills-link-active-color: black;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+.nav-pills .nav-link.active::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  top: 36px;
+  left: 12px;
+}
+
+.nav-pills .nav-link {
+  background-color: transparent !important;
+  --bs-nav-pills-border-radius: none;
+  color: black;
+}
+/* <!-- End-section-portfolio  --> */
+#testimonials {
+  background-color: #f7f7f7;
+}
+
+#testimonials img {
+  width: 80px;
+}
+
+#testimonials .txt-caption p {
+  font-family: Poppins, sans-serif;
+  word-spacing: 3px;
+  font-size: 15px;
+}
+
+#testimonials .txt-caption h5 {
+  font-family: var(--main-font);
+  font-size: 16px;
+}
+
+#testimonials .txt-caption span {
+  font-size: 12px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+
+#testimonials .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black !important;
+}
+/* End-testimonials */
+#numbers h2::after {
+  content: "850";
+  animation: numbers 0.5s;
+}
+
+@keyframes numbers {
+  0% {
+    content: "750";
+  }
+  10% {
+    content: "760";
+  }
+  20% {
+    content: "770";
+  }
+  30% {
+    content: "780";
+  }
+  40% {
+    content: "790";
+  }
+  50% {
+    content: "800";
+  }
+  60% {
+    content: "810";
+  }
+  70% {
+    content: "820";
+  }
+  80% {
+    content: "830";
+  }
+  90% {
+    content: "840";
+  }
+  100% {
+    content: "850";
+  }
+}
+/* end-numbers  */
+#our {
+  background-color: #f7f7f7;
+}
+
+#our .layer {
+  top: 5px;
+  right: 17px;
+  left: 17px;
+  bottom: 115px;
+  opacity: 0;
+  transition: transform 1s;
+  z-index: 9999999;
+}
+
+#our .col-lg-4 {
+  overflow: hidden;
+}
+
+#our .img {
+  overflow: hidden;
+}
+
+#our .img img {
+  transition: transform 0.5s;
+}
+
+#our .col-lg-4:hover .layer {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+#our .col-lg-4:hover img {
+  transform: scale(1.1, 1.1);
+}
+
+#our .layer ul {
+  top: 50%;
+}
+
+#our .layer ul li {
+  width: 40px;
+  height: 40px;
+  &:hover {
+    background-color: white !important;
+    border: 1px black solid;
+  }
+}
+
+#our .layer ul li:hover i {
+  color: black !important;
+}
+/* End-our  */
+#contact ul li {
+  width: 60px;
+  height: 60px;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: black !important;
+  }
+}
+
+#contact ul li i {
+  transition: color 0.5s;
+}
+
+#contact ul li:hover i {
+  color: white !important;
+}
+
+#contact .inner h5 {
+  font-family: var(--main-font);
+  font-size: 16px;
+}
+
+#contact .inner p {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: none !important;
+}
+
+.form-control {
+  background-color: #f4f4f4 !important;
+  border: none !important;
+}
+
+#contact button {
+  background-color: #1c1c1c;
+  color: white;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: white !important;
+    color: black;
+    outline: 1px solid black;
+  }
+}
+
+/* End-contact  */
+
+#footer {
+  background-color: #1c1c1c;
+}
+/* End-footer  */
